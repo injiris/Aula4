@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 1</title>
+    <script>
+      let a = "carro";
+      var b = 1;
+      const c = "casa";
+
+      function buttonClick() {
+        alert("função js");
+      }
+
+      function attTexto() {
+        let input = document.getElementById("meuinput");
+        let p = document.getElementById("para");
+
+        p.textContent = input.value;
+
+        console.log("oi")
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Hello, world</h1>
+    <h5>teste h5</h5>
+    <p id="para">paragrafo</p>
+    <span>texto solto na pagina: span</span>
+    <img src="img.png" alt="gatinho" />
+    <a href="https://google.com">Google</a>
+
+    <input id="meuinput" type="text" oninput="attTexto()" />
+    <select>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+
+    <button onclick="buttonClick()">botão</button>
+  </body>
+</html>
